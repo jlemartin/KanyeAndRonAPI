@@ -10,11 +10,16 @@ namespace KanyeAndRon
         {
             for (int i = 1; i <=5; i++)
             {
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.ForegroundColor = ConsoleColor.White;
+
                 Console.WriteLine($"Dialog #{i}");
+                Console.ResetColor();
 
                 Console.WriteLine($"Kanye: \"{Quoter.Kanye()}\"");
 
                 Console.WriteLine($"Ron: {Quoter.Ron()}");
+
 
                 Console.WriteLine();
 
